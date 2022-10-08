@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Popup View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="PopupViewControllerID" id="Y6W-OH-hqX" customClass="PopupViewController" customModule="PopupAnimation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lPk-ej-xf5">
+                                <rect key="frame" x="8" y="127" width="374" height="603"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="applelogo" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="UBo-ow-g34">
+                                        <rect key="frame" x="97" y="212" width="180" height="178.33333333333334"/>
+                                        <color key="tintColor" red="0.094293653350000006" green="0.094293653350000006" blue="0.094293653350000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="180" id="eav-XR-cCW"/>
+                                            <constraint firstAttribute="width" constant="180" id="muW-Qb-Y1n"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="688-Sl-rNw">
+                                        <rect key="frame" x="153.66666666666666" y="421.66666666666663" width="67" height="35"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Close"/>
+                                        <connections>
+                                            <action selector="didTapCloseBtn:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Qzb-ng-nnk"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="688-Sl-rNw" firstAttribute="top" secondItem="UBo-ow-g34" secondAttribute="bottom" constant="30" id="KvZ-15-2U7"/>
+                                    <constraint firstItem="UBo-ow-g34" firstAttribute="centerX" secondItem="lPk-ej-xf5" secondAttribute="centerX" id="Nwg-V5-zAQ"/>
+                                    <constraint firstItem="UBo-ow-g34" firstAttribute="centerY" secondItem="lPk-ej-xf5" secondAttribute="centerY" id="Ocp-Zn-hos"/>
+                                    <constraint firstItem="688-Sl-rNw" firstAttribute="centerX" secondItem="lPk-ej-xf5" secondAttribute="centerX" id="iOO-1O-p6C"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" red="0.49281169458762886" green="0.49281169458762886" blue="0.49281169458762886" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="lPk-ej-xf5" secondAttribute="trailing" constant="8" id="5Le-0f-HRf"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="lPk-ej-xf5" secondAttribute="bottom" constant="80" id="9YU-wt-6yD"/>
+                            <constraint firstItem="lPk-ej-xf5" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="80" id="uC5-vf-6qG"/>
+                            <constraint firstItem="lPk-ej-xf5" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="8" id="yGa-cB-OyO"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="closeBtn" destination="688-Sl-rNw" id="YFe-SU-ivz"/>
+                        <outlet property="popupView" destination="lPk-ej-xf5" id="PcD-TW-X6K"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-435" y="-1"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="applelogo" catalog="system" width="105" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -16,6 +16,8 @@
 		6D51F15C28F076BC00CADC63 /* PopupAnimationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D51F15B28F076BC00CADC63 /* PopupAnimationTests.swift */; };
 		6D51F16628F076BC00CADC63 /* PopupAnimationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D51F16528F076BC00CADC63 /* PopupAnimationUITests.swift */; };
 		6D51F16828F076BC00CADC63 /* PopupAnimationUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D51F16728F076BC00CADC63 /* PopupAnimationUITestsLaunchTests.swift */; };
+		6D51F17528F0772A00CADC63 /* PopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D51F17428F0772A00CADC63 /* PopupViewController.swift */; };
+		6D51F17728F077EF00CADC63 /* PopupViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D51F17628F077EF00CADC63 /* PopupViewController.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		6D51F16128F076BC00CADC63 /* PopupAnimationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PopupAnimationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D51F16528F076BC00CADC63 /* PopupAnimationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupAnimationUITests.swift; sourceTree = "<group>"; };
 		6D51F16728F076BC00CADC63 /* PopupAnimationUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupAnimationUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6D51F17428F0772A00CADC63 /* PopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupViewController.swift; sourceTree = "<group>"; };
+		6D51F17628F077EF00CADC63 /* PopupViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PopupViewController.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,10 +106,12 @@
 				6D51F14428F076BB00CADC63 /* AppDelegate.swift */,
 				6D51F14628F076BB00CADC63 /* SceneDelegate.swift */,
 				6D51F14828F076BB00CADC63 /* ViewController.swift */,
+				6D51F17428F0772A00CADC63 /* PopupViewController.swift */,
 				6D51F14A28F076BB00CADC63 /* Main.storyboard */,
 				6D51F14D28F076BC00CADC63 /* Assets.xcassets */,
 				6D51F14F28F076BC00CADC63 /* LaunchScreen.storyboard */,
 				6D51F15228F076BC00CADC63 /* Info.plist */,
+				6D51F17628F077EF00CADC63 /* PopupViewController.storyboard */,
 			);
 			path = PopupAnimation;
 			sourceTree = "<group>";
@@ -231,6 +237,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D51F17728F077EF00CADC63 /* PopupViewController.storyboard in Resources */,
 				6D51F15128F076BC00CADC63 /* LaunchScreen.storyboard in Resources */,
 				6D51F14E28F076BC00CADC63 /* Assets.xcassets in Resources */,
 				6D51F14C28F076BB00CADC63 /* Main.storyboard in Resources */,
@@ -261,6 +268,7 @@
 				6D51F14928F076BB00CADC63 /* ViewController.swift in Sources */,
 				6D51F14528F076BB00CADC63 /* AppDelegate.swift in Sources */,
 				6D51F14728F076BB00CADC63 /* SceneDelegate.swift in Sources */,
+				6D51F17528F0772A00CADC63 /* PopupViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
